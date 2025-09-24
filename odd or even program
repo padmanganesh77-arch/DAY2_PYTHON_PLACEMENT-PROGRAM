@@ -1,0 +1,7 @@
+a=int(input())
+b=int(input())
+max_value=max(a,b)
+if(max_value%2==0):
+      print("Even")
+else:
+     print("Odd")
