@@ -1,0 +1,13 @@
+salary=int(input())
+bank=int(input())
+hostel=int(input())
+food=int(input())
+parents=int(input())
+spend=bank+hostel+food+parents
+if(spend<salary):
+    print("He can save the money")
+elif(spend==salary):
+    print("He can manage the money")
+else:
+    print("He want to work hard")
+
