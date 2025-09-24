@@ -1,0 +1,24 @@
+price=int(input())
+mnth=int(input())
+cur_price=0
+if(mnth==2 or mnth==5 or mnth==8 or mnth==9):
+       print("The dress price is",price)
+elif(mnth>=13):
+    print("Invalid mnth")
+else:
+    if(mnth==1):
+        dis=(price*20)/100
+        cur_price=price-dis
+    elif(mnth==3 or mnth==4):
+        dis=(price*10)/100
+        cur_price=price-dis
+    elif(mnth==6 or mnth==7):
+        dis=(price*75)/100
+        cur_price=price-dis
+    elif(mnth==10 or mnth==11):
+        dis=(price*30)/100
+        cur_price=price-dis
+    else:
+        dis=(price*35)/100
+        cur_price=price-dis
+    price("The dress price is",cur_price)
